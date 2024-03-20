@@ -10,7 +10,7 @@ int main(){
     
     int* w = v[2];
 
-    printf("\n%d  %d %d\n", x, p, w); 
+    printf("\n%d  %d %d\n", x, &p, &w); 
 }
 
-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
+//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

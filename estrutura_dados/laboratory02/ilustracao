@@ -1,0 +1,17 @@
+Determine os valores com base na ilustração
+p: -9440
+v: -9424
+&v[0]: 0x7fffffffdb30
+v+1: -9420
+*(v+2): 3
+w : -9440
+*w : 3
+w[1] :
+x : 
+&x : 
+*x : 
+x[0] : 
+p + 3 : 
+&p[3] : 
+*(p+3) : 
+p[3] :
