@@ -1,4 +1,4 @@
-package academic_subject;
+package assets.academic_subject;
 
 public enum area {
     Exactly,

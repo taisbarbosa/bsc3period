@@ -1,10 +1,16 @@
-package student;
+package assets.student;
 
 public class course {
     String title;
     String description;
     String code;
     
+    course(String title, String description, String code){
+        this.title = title;
+        this.description = description;
+        this.code = code;
+    }
+
     public String getTitle() {
         return title;
     }

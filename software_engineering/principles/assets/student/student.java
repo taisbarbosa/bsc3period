@@ -1,22 +1,28 @@
-package student;
+package assets.student;
 
-import java.sql.Date;
 
 public class student{
-    String name;
-    Date birth;
-    String identification;
+    private
+        String name;
+        String birth;
+        String identification;
     
-    public String getName() {
+    student(String name, String birth, String identation){
+        this.name = name;
+        this.birth = birth;
+        this.identification = identation;
+    }
+
+    public String getName(){
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-    public Date getBirth() {
+    public String getBirth() {
         return birth;
     }
-    public void setBirth(Date birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
     public String getIdentification() {

@@ -1,12 +1,21 @@
-package a_class;
+package assets.a_class;
 
-import java.sql.Date;
+
+import assets.mister.mister;
 
 public class a_class {
     String title;
     String description;
-    Date date;
-    
+    String date;
+    mister mediator;
+
+    public a_class(String title, String description, String date, mister mediator) {
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.mediator = mediator;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -19,11 +28,10 @@ public class a_class {
     public void setDescription(String description) {
         this.description = description;
     }
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
-
 }

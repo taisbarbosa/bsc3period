@@ -1,13 +1,21 @@
-package mister;
+package assets.mister;
 
-import java.sql.Date;
 
 public class mister{
     String name;
-    Date birth;
+    String birth;
     String identification;
     formation formation[];
+    formation one_formation;
     post post;
+    
+    public mister(String name, String birth, String identification, formation formation, assets.mister.post post) {
+        this.name = name;
+        this.birth = birth;
+        this.identification = identification;
+        this.one_formation = formation;
+        this.post = post;
+    }
     
     public String getName() {
         return name;
@@ -15,10 +23,10 @@ public class mister{
     public void setName(String name) {
         this.name = name;
     }
-    public Date getBirth() {
+    public String getBirth() {
         return birth;
     }
-    public void setBirth(Date birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
     public String getIdentification() {

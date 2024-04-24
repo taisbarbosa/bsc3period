@@ -1,6 +1,6 @@
-package academic_subject;
+package assets.academic_subject;
 
-import student.student;
+import assets.student.student;
 
 public class subject {
     String name;
@@ -10,6 +10,14 @@ public class subject {
     area area_knowledge;
     student student[];
     
+    public subject(String name, String description, String code, int[] period, area area_knowledge, assets.student.student[] student) {
+        this.name = name;
+        this.description = description;
+        this.code = code;
+        this.period = period;
+        this.area_knowledge = area_knowledge;
+        this.student = student;
+    }
     public String getName() {
         return name;
     }
@@ -45,7 +53,5 @@ public class subject {
     }
     public void setStudent(student[] student) {
         this.student = student;
-    }
-
-    
+    } 
 }
