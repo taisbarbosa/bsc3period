@@ -1,6 +1,7 @@
 #include <iostream>
 #include "assets/sequence.hpp"
 #include "assets/point.hpp"
+#include "contiguos.hpp"
 using namespace std;
 
 int main(){
@@ -11,7 +12,7 @@ int main(){
 
     print_contiguous(contiguous_organization, 3);
 
-    Point* n1 = new Point();
-    Point* n2 = new Point();
-    Point* n3 = new Point();
+    Point* p1 = new Point(2, nullptr);
+    Point* p2 = new Point();
+    Point* p3 = new Point();
 }
