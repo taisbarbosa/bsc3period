@@ -7,4 +7,7 @@
 <p>O intuito é poder criar instâncias das classes citadas e formar uma aula.</p>
 
 ### Princípios Usados
-#### S — Single Responsiblity Principle (Princípio da responsabilidade única)
+### S — Single Responsiblity Principle (Princípio da responsabilidade única)
+<div>
+<a href="https://github.com/taisbarbosa/bsc3period/blob/main/software_engineering/principles/assets/mister/formation.java target="_blank">Classe formation:</a> <p> exemplo de responsabilidade única, a classe trata apenas de um objeto, ou seja, as variáveis e função tratam apenas da formação proficional</p>
+</div>
