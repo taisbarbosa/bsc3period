@@ -14,4 +14,4 @@
 
 ### - Prefira Composição a Herança
 
-Nessa abstração foi utilizada a composição. Por exemplo em <a href="https://github.com/taisbarbosa/bsc3period/blob/main/software_engineering/principles/assets/mister/formation.java" target="_blank">subject</a>, onde a classe é composta pelo objeto student e pelo objeto area.
+Nessa abstração foi utilizada a composição. Por exemplo em <a href="https://github.com/taisbarbosa/bsc3period/blob/main/software_engineering/principles/assets/academic_subject/subject.java" target="_blank">subject</a>, onde a classe é composta pelo objeto student e pelo objeto area.
