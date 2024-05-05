@@ -24,19 +24,17 @@ class Vector{
         // Insere o elemento e na última posição
         bool push_back(int e){
             manage_capacity();
-            for (int i = this->size-1; i >=0; i--)
-            {
-                this->array[i-1]=array[i];
-            }
+            this->size++;
             this->array[size-1]=e;
-            return true;
+            return false;
         }
         // Insere o elemento e na primeira posição
         bool push_front(int e){
             manage_capacity();
-            for (int i = 1; i < this->size; i++)
+            this->size++;
+            for (int i = 0; i < this->size; i++)
             {
-                this->array[i]=array[i-1];
+                this->array[size-(i+1)]=array[size-(i+2)];
             }
             this->array[0]=e;
             return true;
@@ -44,12 +42,17 @@ class Vector{
         // Insere o elemento e na posição pos
         bool insert(int pos, int e){
             manage_capacity();
-            for (int i = pos; i < size-1; i++)
+            this->size++;
+            int count = 0;
+            for (int i = pos; i <= this->size; i++){
+                count++;
+            }
+            for (int j = 0; j < count; j++)
             {
-                this->array[i+1]=array[i];
+                this->array[size-j]=array[size-(j+1)];
             }
             this->array[pos]=e;
-            return true;
+            return 0;
         }
         // Remove o último elemento
         int pop_back(){
@@ -122,11 +125,12 @@ class Vector{
             {
                 if (i==this->size-1)
                 {
-                    cout<<this->array[i]<<"]"<<endl;
+                    cout<<this->array[i];
                     break;
                 }
-                cout<<this->array[i]<<","<<endl;
+                cout<<this->array[i]<<",";
             }
+            cout<<"]"<<endl;
         }
 
     private:
