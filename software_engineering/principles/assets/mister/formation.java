@@ -21,6 +21,7 @@ public class formation {
         this.name = name;
         this.institution = institution;
         this.f_type = type;
+        this.s_type = s_type;
         this.year = year;
     }
     public void type_formation(){

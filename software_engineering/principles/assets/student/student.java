@@ -6,11 +6,21 @@ public class student{
         String name;
         String birth;
         String identification;
+        course course;
     
-    student(String name, String birth, String identation){
+    student(String name, String birth, String identation, course c){
         this.name = name;
         this.birth = birth;
         this.identification = identation;
+        this.course = c;
+    }
+
+    public course getCourse() {
+        return course;
+    }
+
+    public void setCourse(course course) {
+        this.course = course;
     }
 
     public String getName(){

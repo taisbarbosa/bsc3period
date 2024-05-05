@@ -6,17 +6,23 @@ public class subject {
     String name;
     String description;
     String code;
-    int period[];
+    int period_min;
     area area_knowledge;
-    student student[];
+    student students[];
+    int size_student;
     
-    public subject(String name, String description, String code, int[] period, area area_knowledge, assets.student.student[] student) {
+    public subject(String name, String description, String code, int period, area area_knowledge) {
         this.name = name;
         this.description = description;
         this.code = code;
-        this.period = period;
+        this.period_min = period;
         this.area_knowledge = area_knowledge;
-        this.student = student;
+        this.students = students;
+        this.size_student=0;
+    }
+    public void add_student(student s){
+        size_student++;
+        students[size_student-1]=s;
     }
     public String getName() {
         return name;
@@ -36,11 +42,11 @@ public class subject {
     public void setCode(String code) {
         this.code = code;
     }
-    public int[] getPeriod() {
-        return period;
+    public int getPeriod() {
+        return period_min;
     }
-    public void setPeriod(int[] period) {
-        this.period = period;
+    public void setPeriod(int period) {
+        this.period_min = period;
     }
     public area getArea_knowledge() {
         return area_knowledge;
@@ -49,9 +55,9 @@ public class subject {
         this.area_knowledge = area_knowledge;
     }
     public student[] getStudent() {
-        return student;
+        return students;
     }
     public void setStudent(student[] student) {
-        this.student = student;
+        this.students = student;
     } 
 }

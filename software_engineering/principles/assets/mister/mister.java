@@ -6,15 +6,23 @@ public class mister{
     String birth;
     String identification;
     formation formation[];
+    int size_formation;
     formation one_formation;
     post post;
     
-    public mister(String name, String birth, String identification, formation formation, assets.mister.post post) {
+    public mister(String name, String birth, String identification, formation formation, post post) {
         this.name = name;
         this.birth = birth;
         this.identification = identification;
+        this.size_formation = 0;
         this.one_formation = formation;
         this.post = post;
+    }
+
+    public void add_formation(formation f){
+        size_formation++;
+        formation[0] = one_formation;
+        formation[size_formation] = f;
     }
     
     public String getName() {
