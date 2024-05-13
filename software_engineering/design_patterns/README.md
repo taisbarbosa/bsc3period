@@ -1,4 +1,6 @@
-## Creational - Singleton:
+## DESIGN PATTERNS
+
+### 1. Creational - Singleton:
 
 ### Para que serve?
 
@@ -30,3 +32,13 @@ Neste exemplo, não é adequado a proliferação de objetos Logger. Em vez disso
 <img width="500px" src="https://github.com/taisbarbosa/bsc3period/blob/main/software_engineering/design_patterns/uml_singleton.png">
 <p>O código exemplo em Java pode ser acessado <a href="https://github.com/taisbarbosa/bsc3period/blob/main/software_engineering/design_patterns/singleton_java/Main.java">aqui</a>.</p>
 <p>Explicação:<br>A classe Logger possui um construtor padrão privado, que não permite que qualquer código fora dessa classe tente chamar new Logger().<br>Quando os métodos segunites precisam dessa instância, é chamado o método público e estático getInstance(), assim as três chamadas retornam a mesma instância de Logger.</p>
+
+### 2. Structural - Bridge:
+
+### Para que serve?
+
+<p>O padrão Bridge serve para dividir uma classe grande ou um conjunto de classes intimamente ligadas em hierarquias que podem ser desenvolvidas independentemente</p>
+
+### Problema?
+
+Suponhamos uma classe Forma geométrica com um par de subclasses, e queremos estender essa hierarquia de classe para incorporar novas características, tal como cor Azul e Vermelha. Contudo, já que nós já temos duas subclasses, é preciso criar quatro combinações de classe, como CírculoAzul, CirculoVermelho, QuadradoAzul e QuadradoVermelho.
