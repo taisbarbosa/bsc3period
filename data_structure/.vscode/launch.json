@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tarci/bcc/bsc3period/data_structure/laboratory06",
-      "program": "c:/Users/tarci/bcc/bsc3period/data_structure/laboratory06/build/Debug/outDebug",
+      "cwd": "c:/Users/tarci/bcc/bsc3period/data_structure/laboratory03",
+      "program": "c:/Users/tarci/bcc/bsc3period/data_structure/laboratory03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

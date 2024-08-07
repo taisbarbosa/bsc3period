@@ -4,6 +4,7 @@ using namespace std;
 
 //01. return the position of the first occurrence of the character in the string
 int string_find_first(string s, char c){
+    
     int str_size = s.size();
     int count = 0;
 
@@ -63,6 +64,24 @@ bool check_name(string c){
     return true;
 }
 
+//04. Creates and returns a dynamically allocated array of integers (int*). Ascending or descending order.
+int* create_array(int n, bool asc){
+    int vect[n];
+    int c = n;
+    for (int i = 0; i < n; i++)
+    {
+        if (asc==1)
+        {
+            vect[i]=i+1;
+        }else{
+            vect[i]=c;
+            c--;
+        }  
+    }
+    int* v = vect;
+    return v;
+}
+
 int main(){
     //01.
     int pos = string_find_first("I love program",'o');
@@ -77,5 +96,24 @@ int main(){
     bool check2 = check_name("Maria");
     cout<<check2<<endl;
 
+    //04.
+    int* v;
+    int n = 8;
+    bool b = 1;
+    cout<<"blablabla"<<" ";
+    v=create_array(n,b);
+    cout<<"[";
+    for (int i = 0; i < n; i++)
+    {
+        if (i==n-1){
+            cout<<v[i];
+        }else{
+            cout<<v[i]<<",";  
+        }            
+    }
+    cout<<"]"<<endl;
+    
+    cout<<v[2];
+    cout<<v<<" ";
     return 0;
 }
