@@ -44,8 +44,7 @@ class ListaEncadeada {
       this->ultimo = novo;
       this->qtde++;
       return true;
-   }
-   // Insere o elemento e na primeira posição
+    // Insere o elemento e na primeira posição
    bool push_front(int e) {
 
       No* novo = new No(nullptr, e, nullptr);
